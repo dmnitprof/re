@@ -1,9 +1,17 @@
 import Link from 'next/link'
+import Head from 'next/head'
 
-export function MainLayout({children}) {
+export function MainLayout({ children , title = 'SRR Site'}) {
     return (
         <>
-            <Head></Head>
+            <Head>
+
+                <title>{title} | SSR Site</title>
+                <meta name="keywords" content="Next SSR, SIte"/>
+                <meta name="description" content="Сайт ремонт телефонов, планшетов, пк"/>
+                <meta charSet="UTF-8"/>
+
+            </Head>
             <nav>
                 <Link href={'/'}><a>Главная</a></Link>
                 <Link href={'/about'}><a>О Нас</a></Link>

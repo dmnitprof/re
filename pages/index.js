@@ -1,16 +1,10 @@
 import Link from 'next/link'
-import Head from "next/head"
-import {MainLayout} from "../components/MainLayout";
+import Head from 'next/head'
+import {MainLayout} from '../components/MainLayout'
 
 export default function Index() {
     return (
-        <MainLayout>
-            <Head>
-                <title>SSR Site</title>
-                <meta name="keywords" content="Next SSR, SIte"/>
-                <meta name="description" content="Сайт ремонт телефонов, планшетов, пк"/>
-                <meta charSet="UTF-8"/>
-            </Head>
+        <MainLayout title={'Главная'}>
             <h1>Hello Next js</h1>
             <p><Link href={'/about'}><a>About</a></Link></p>
             <p><Link href={'/posts'}><a>Posts</a></Link></p>
