@@ -28,7 +28,7 @@ export default function Post({post: serverPost}) {
     return (
         <MainLayout>
             <h1>{post.title}</h1>
-            <hr/>
+            <hr />
             <p>{post.body}</p>
             <Link href={'/posts'}><a>Назад к списку постов</a></Link>
 

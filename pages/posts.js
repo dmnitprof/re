@@ -26,6 +26,7 @@ export default function Posts({ posts: serverPosts }) {
     return (
         <MainLayout title={'Посты'}>
             <h1>Список постов</h1>
+            <hr />
             <ul>
                 {posts.map(post => (
                     <li key={post.id}>

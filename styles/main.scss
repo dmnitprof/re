@@ -19,9 +19,10 @@ nav {
     text-decoration: none;
     margin-left: 2rem;
     font-size: 1rem;
+
     &:hover {
       color: chartreuse;
-      border-bottom: solid 1px chartreuse ;
+      border-bottom: solid 1px chartreuse;
     }
 
   }
@@ -32,6 +33,21 @@ main {
   text-align: center;
   margin-top: 60px;
   padding: 1rem;
+
+  li {
+    list-style-type: none;
+    margin-bottom: 1rem;
+    a {
+      font-size: 1.5rem;
+    }
+    a:hover {
+      color: crimson;
+
+    }
+
+  }
+
+
 }
 
 footer {
