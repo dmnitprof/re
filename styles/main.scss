@@ -1,3 +1,39 @@
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+nav {
+  position: fixed;
+  height: 60px;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: darkblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 1rem;
+    &:hover {
+      color: chartreuse;
+      border-bottom: solid 1px chartreuse ;
+    }
+
+  }
+
+}
+
+main {
+  text-align: center;
+  margin-top: 60px;
+  padding: 1rem;
+}
+
+footer {
+  text-align: center;
 }

@@ -22,30 +22,33 @@ export function MainLayout({ children , title = 'SRR Site'}) {
             <main>
                 {children}
             </main>
-            <style jsx>{`
-            nav {
-            position: fixed;
-            height: 60px;
-            left: 0;
-            right: 0;
-            top: 0;
-            background: darkblue;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            }
+            {/*<style jsx>{`*/}
+            {/*nav {*/}
+            {/*position: fixed;*/}
+            {/*height: 60px;*/}
+            {/*left: 0;*/}
+            {/*right: 0;*/}
+            {/*top: 0;*/}
+            {/*background: darkblue;*/}
+            {/*display: flex;*/}
+            {/*justify-content: space-around;*/}
+            {/*align-items: center;*/}
+            {/*}*/}
             
-            nav a {
-            color: #fff;
-            text-decoration: none;
-            }
+            {/*nav a {*/}
+            {/*color: #fff;*/}
+            {/*text-decoration: none;*/}
+            {/*}*/}
             
-            main {
-            margin-top: 60px;
-            padding: 1rem;
-            }`
-            }
-            </style>
+            {/*main {*/}
+            {/*margin-top: 60px;*/}
+            {/*padding: 1rem;*/}
+            {/*}`*/}
+            {/*}*/}
+            {/*</style>*/}
+            <footer>
+                <p>подвал сайта</p>
+            </footer>
         </>
     )
 }
