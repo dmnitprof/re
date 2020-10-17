@@ -16,6 +16,8 @@ export function MainLayout({ children , title = 'SRR Site'}) {
                 <Link href={'/'}><a>Главная</a></Link>
                 <Link href={'/about'}><a>О Нас</a></Link>
                 <Link href={'/posts'}><a>Посты</a></Link>
+                <Link href={'/services'}><a>Услуги</a></Link>
+                <Link href={'/contacts'}><a>Контакты</a></Link>
             </nav>
             <main>
                 {children}
