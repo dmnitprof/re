@@ -36,6 +36,8 @@ export default function Post({post: serverPost}) {
     )
 }
 
+// mixed version of frontend and backend
+
 Post.getInitialProps = async ({ query, req }) => {
     if(!req) {
         return {post: null}
@@ -47,3 +49,14 @@ Post.getInitialProps = async ({ query, req }) => {
         post
     }
 }
+
+// Esle backend
+// export async function getServerSideProps({ query, req }) {
+//     if(!req) {
+//         return {post: null}
+//     }
+//     const response = await fetch(`http://localhost:4200/posts/${query.id}`)
+//     const post = await response.json()
+//
+//     return {props: { post }}
+// }

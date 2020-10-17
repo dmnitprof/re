@@ -1,5 +1,6 @@
 import {MainLayout} from '../components/MainLayout'
 import Link from "next/link";
+import {useState, useEffect} from 'react'
 
 export default function Posts({ posts: serverPosts }) {
     const [posts, setPosts] = useState(serverPosts)
@@ -38,7 +39,7 @@ export default function Posts({ posts: serverPosts }) {
     )
 }
 
-Posts.getInitialProps = async (req) => {
+Posts.getInitialProps = async ({req}) => {
     if (!req) {
         return {posts: null}
     }
