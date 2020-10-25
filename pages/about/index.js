@@ -10,8 +10,8 @@ export default function About() {
     return (
         <MainLayout title={'О Нас'}>
             <h1>About Page</h1>
-            <button onClick={linkClickHandler}>Вернуться на главную!!!</button>
-            <button onClick={() => Router.push('/posts')}>Вернуться к странице постов</button>
+            <button onClick={linkClickHandler} className="button">Вернуться на главную!!!</button>
+            <button onClick={() => Router.push('/posts')}  className="button">Вернуться к странице постов</button>
         </MainLayout>
     )
 }

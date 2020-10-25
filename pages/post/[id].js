@@ -20,13 +20,13 @@ export default function Post({post: serverPost}) {
     }, [])
 
     if (!post) {
-        return <MainLayout>
-            <p>Загрузка ...</p>
+        return <MainLayout title={'Посты'}>
+            <p className='loader'>Загрузка ...</p>
         </MainLayout>
     }
 
     return (
-        <MainLayout>
+        <MainLayout title={'Посты'}>
             <h1>{post.title}</h1>
             <hr />
             <p>{post.body}</p>
@@ -50,7 +50,7 @@ Post.getInitialProps = async ({ query, req }) => {
     }
 }
 
-// backend
+//  version of backend
 // export async function getServerSideProps({ query, req }) {
 //     if(!req) {
 //         return {post: null}

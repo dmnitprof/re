@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
-
+ box-sizing: border-box;
 }
 
 nav {
@@ -34,6 +34,19 @@ main {
   margin-top: 60px;
   padding: 1rem;
 
+  .button {
+    margin-left: 1rem;
+    background: burlywood;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: darkblue;
+    cursor: pointer;
+    &:hover {
+      background: antiquewhite;
+      border: solid 2px coral;
+    }
+  }
+
   li {
     list-style-type: none;
     margin-bottom: 1rem;
@@ -47,19 +60,39 @@ main {
 
     }
 
+
+  }
+
+  .loader {
+    color: red;
+    -webkit-animation: loader 1s linear infinite;
+    animation:loader 1s linear infinite;
+    font-weight: bold;
+    color: #F00;
+  }
+  @-webkit-keyframes loader {
+    0% { color: #F00; }
+    50% { color: #FBB; }
+    100% { color: #F00; }
+  }
+
+  @keyframes loader {
+    0% { color: #F00; }
+    50% { color: #FBB; }
+    100% { color: #F00; }
   }
 
 
 }
 
 footer {
-  position: absolute;
+  width: 100%;
+  position: fixed;
   left: 0;
   bottom: 0;
-  width: 100%;
-  height: 80px;
   display: flex;
   justify-content: space-around;
+  border: solid 1px black;
 
   ul {
     display: flex;
@@ -75,7 +108,7 @@ footer {
       }
       a:hover {
         color: red;
-
+        text-decoration: overline;
       }
 
     }

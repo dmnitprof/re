@@ -18,8 +18,8 @@ export default function Posts({ posts: serverPosts }) {
     }, [])
 
     if (!posts) {
-        return <MainLayout>
-            <p>Загрузка ...</p>
+        return <MainLayout title={'Посты'}>
+            <p className='loader'>Загрузка ...</p>
         </MainLayout>
     }
 
