@@ -50,7 +50,7 @@ Post.getInitialProps = async ({ query, req }) => {
     }
 }
 
-// Esle backend
+// backend
 // export async function getServerSideProps({ query, req }) {
 //     if(!req) {
 //         return {post: null}
